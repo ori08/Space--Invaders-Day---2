@@ -25,6 +25,7 @@ function createHero(board) {
 }
 
 function moveHero(ev) {
+    isWin()
     if (!gGame.isOn) return
     var nextLocation = getNextLocation(ev)
     // varified that hero not pass the wall
